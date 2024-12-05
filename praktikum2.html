@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Mouseover</title>
+    <style>
+      #message {
+        margin-top: 10px;
+        font-size: 16px;
+        color: #333333;
+      }
+    </style>
+  </head>
+<body>
+  <button id="hoverButton">Hover over this button!</button>
+  <p id="message"></p>
+
+  <script>
+    const hoverButton = document.getElementById('hoverButton');
+    const message = document.getElementById('message');
+
+    hoverButton.addEventListener('mouseover', function () {
+      message.textContent = 'Mouse is over the button!';
+    });
+
+    hoverButton.addEventListener('mouseout', function () {
+      message.textContent = ''; // Menghapus pesan saat mouse keluar dari tombol
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Color</title>
+  </head>
+  <body>
+    <button id="changeColor">Change Color</button>
+    <p id="text">Hello Indonesia.</p>
+
+    <script>
+      const button = document.getElementById('changeColor');
+      const text = document.getElementById('text');
+
+      button.addEventListener('click', function () {
+        text.style.color = 'blue';
+      });
+    </script>
+  </body>
+</html>
